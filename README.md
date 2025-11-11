@@ -126,7 +126,7 @@ With hands-on experience in both **software engineering** and **2D/3D design**, 
 |----------|--------------|-------------|------|
 | 🚚 **Koi Express** | A web system for **Koi fish transportation** — includes booking, pricing, and feedback management. | React, Node.js, MongoDB, Express | [🔗 View Repo](https://github.com/not-for-tomorrow/koi-express) |
 | 🌬️ **OnlyfanShop** |An e-commerce platform for electric fans, featuring product management, order tracking, and a connected Android app. Built with Java Spring Boot for the backend and Android Studio for the mobile client. | Java, Spring Boot, MySQL, Android Studio, REST API | [🔗 View Repo](https://github.com/JustOnlyFan) |
-| 💎 **Diamond Auction System** | Jewelry auction management with live bidding and secure payments. | Spring Boot, React, MySQL | [🔗 View Repo](https://github.com/not-for-tomorrow/Surplus-Value-Notebook.git) |
+| 📖 **Surplus Value Notebook (3D Interactive)** | Jewelry auction management with live bidding and secure payments. | Spring Boot, React, MySQL | [🔗 View Repo](https://github.com/not-for-tomorrow/Surplus-Value-Notebook.git) |
 
 ---
 
