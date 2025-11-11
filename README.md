@@ -179,8 +179,6 @@ With hands-on experience in both **software engineering** and **2D/3D design**, 
   </picture>
 </p>
 
----
-
 ## 🏆 Achievements & Profile Stats  
 
 <p align="left">
@@ -197,4 +195,13 @@ With hands-on experience in both **software engineering** and **2D/3D design**, 
 
 <p align="center">
   <i>“Code is art — and every line tells a story.”</i> 🚀  
+</p>
+
+---
+
+<!-- 🐍 GitHub Contribution Snake Animation -->
+<p align="center">
+  <img src="https://github.com/not-for-tomorrow/not-for-tomorrow/blob/output/github-snake-dark.svg" alt="github-contribution-snake" />
+  <img src="https://github.com/not-for-tomorrow/not-for-tomorrow/blob/output/github-snake.svg" alt="github-contribution-snake" />
+  <img src="https://github.com/not-for-tomorrow/not-for-tomorrow/blob/output/ocean.gif" alt="github-contribution-snake-animation" />
 </p>
