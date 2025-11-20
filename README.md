@@ -1,199 +1,621 @@
-<h1 align="center">Hi 👋, I'm Huy, 私の名前は一番フイだよ</h1>
-<h3 align="center">Full-Stack Developer | Front-End Enthusiast | 2D & 3D Graphic Designer</h3>
+<div align="center">
 
----
+<!-- Animated Header -->
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=6,11,20&amp;height=300&amp;section=header&amp;text=Huy%20Nguyen%20%7C%20%E4%B8%80%E7%95%AA%E3%83%95%E3%82%A4&amp;fontSize=50&amp;animation=twinkling" />
 
-### 🌟 About Me | 自己紹介
+<!-- Typing Animation -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&amp;size=22&amp;duration=3000&amp;pause=1000&amp;color=00D9FF&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;width=800&amp;height=100&amp;lines=Welcome+to+my+Digital+Space+%F0%9F%8C%8F;Bridging+Technology+%26+Creativity;Building+the+Future%2C+One+Commit+at+a+Time+%F0%9F%9A%80" alt="Typing SVG" />
 
-<p align="center">
-  こんにちは！私は <b>フイ (Huy)</b> です。<br/>
-  日本とベトナムの技術をつなぐ <b>ブリッジSE（Bridge System Engineer）</b>、そして<br/>
-  コードとデザインの融合を愛する <b>Full-Stack Developer & Creative Designer</b> です。
-</p>
-
----
-
-### 💡 Introduction | 紹介
-
-I’m **Huy Nguyen**, a **Full-Stack Developer** and **Design Enthusiast** who bridges **technology and creativity**.  
-With hands-on experience in both **software engineering** and **2D/3D design**, I aim to build applications that are not only functional — but also visually inspiring.
-
-日本と海外チームの両方で開発経験があり、  
-**技術 × デザイン × コミュニケーション** の力で、価値のあるプロダクトを作ることを目指しています。  
-
----
-
-### 🚀 Current Focus | 現在の目標
-- 🧩 Building my **personal portfolio website** using **React.js**, **Three.js**, and **Next.js**  
-- 🎨 Exploring **Blender** for 3D modeling and interactive UI concepts  
-- 🤖 Learning **LLM tools (LM Studio)** and integrating AI into creative workflows  
-
----
-
-### 🤝 Connect with me | 連絡はこちらへ
-<p align="left">
-<a href="https://twitter.com/nnh49946258" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="twitter" height="30" width="40" /></a>
-<a href="https://www.linkedin.com/in/nguy%E1%BB%85n-huy-83a0ab29a/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin" height="30" width="40" /></a>
-<a href="https://www.facebook.com/nguyen.huy.510844/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="facebook" height="30" width="40" /></a>
-<a href="https://www.youtube.com/@nguyenhuy7027" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="youtube" height="30" width="40" /></a>
-</p>
-<p></p>
-<p align="center">
-  <i>“Bridging technology, design, and cultures — one line of code at a time.”</i> 🌏  
-  <br/>
-  「テクノロジーとデザイン、そして文化をつなぐエンジニア。」  
-</p>
-
----
-
-### ⚒ Core Skills
-
-- **Frontend Development**: React, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Redux, Bootstrap, SCSS  
-- **Backend Development**: Node.js, Express.js, Spring Boot  
-- **Database Management**: MySQL, MongoDB  
-- **Version Control & CI/CD**: Git, GitHub, GitHub Actions, Vite, Webpack  
-- **Design & Prototyping**: Figma, Photoshop, Illustrator, Blender  
-
----
-
-### 🧠 Tech Stack & Tools 
-
-- **Frontend**: React, Redux, TypeScript, Next.js, Vue.js, Tailwind CSS, Bootstrap, SCSS, Vite, Vuetify  
-- **Backend**: Node.js, Express.js, Spring Boot, NestJS, Django, .NET Core, Firebase  
-- **Database**: MySQL, MongoDB, PostgreSQL, MS SQL, Oracle  
-- **DevOps & Deployment**: Docker, Kubernetes, AWS, Azure, Nginx, Heroku, Vercel, Netlify  
-- **Testing & Automation**: Jest, Selenium, Postman  
-- **AI / ML Tools**: OpenCV, TensorFlow, PyTorch, Scikit-learn  
-- **Design & 3D**: Figma, Photoshop, Illustrator, Blender, Unity, Unreal Engine  
-- **Other Tools**: Git, GitHub Actions, Webpack, npm, Linux, Visual Studio Code  
-
-<p align="left">
-<!-- giữ nguyên toàn bộ icon -->
-<a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a>
-<a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg" alt="angularjs" width="40" height="40"/> </a>
-<a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a>
-<a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a>
-<a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a>
-<a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender" width="40" height="40"/> </a>
-<a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a>
-<a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
-<a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a>
-<a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
-<a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/> </a>
-<a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a>
-<a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a>
-<a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>
-<a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>
-<a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/> </a>
-<a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
-<a href="https://jestjs.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg" alt="jest" width="40" height="40"/> </a>
-<a href="https://kotlinlang.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40"/> </a>
-<a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
-<a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a>
-<a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a>
-<a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a>
-<a href="https://nestjs.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-plain.svg" alt="nestjs" width="40" height="40"/> </a>
-<a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a>
-<a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a>
-<a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a>
-<a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a>
-<a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>
-<a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a>
-<a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
-<a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a>
-<a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a>
-<a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a>
-<a href="https://www.ruby-lang.org/en/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg" alt="ruby" width="40" height="40"/> </a>
-<a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a>
-<a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a>
-<a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40"/> </a>
-<a href="https://spring.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="40" height="40"/> </a>
-<a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a>
-<a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a>
-<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a>
-<a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a>
-<a href="https://unrealengine.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg" alt="unreal" width="40" height="40"/> </a>
-<a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/> </a>
-<a href="https://vuetifyjs.com/en/" target="_blank" rel="noreferrer"> <img src="https://bestofjs.org/logos/vuetify.svg" alt="vuetify" width="40" height="40"/> </a>
-</p>
-
----
-
-### 📘 Featured Projects
-
-| Project | Description | Tech Stack | Link |
-|----------|--------------|-------------|------|
-| 🚚 **Koi Express** | A web system for **Koi fish transportation** — includes booking, pricing, and feedback management. | React, Node.js, MongoDB, Express | [🔗 View Repo](https://github.com/not-for-tomorrow/koi-express) |
-| 🌬️ **OnlyfanShop** |An e-commerce platform for electric fans, featuring product management, order tracking, and a connected Android app. Built with Java Spring Boot for the backend and Android Studio for the mobile client. | Java, Spring Boot, MySQL, Android Studio, REST API | [🔗 View Repo](https://github.com/JustOnlyFan) |
-| 📖 **Surplus Value Notebook (3D Interactive)** | Jewelry auction management with live bidding and secure payments. | Spring Boot, React, MySQL | [🔗 View Repo](https://github.com/not-for-tomorrow/Surplus-Value-Notebook.git) |
-
----
-
-### 🎨 3D / Design Showcase
-
-<p align="center">
-  <img src="https://github.com/not-for-tomorrow/assets/blob/main/previews/3d-scene.gif" width="45%" />
-  <img src="https://github.com/not-for-tomorrow/assets/blob/main/previews/ui-dashboard.png" width="45%" />
-</p>
-
-> 🖌️ Includes **3D renders**, **UI design systems**, and **interactive graphics** made using **Blender**, **Figma**, and **Three.js**
-
----
-
-### 📊 GitHub Stats
-
-<p align="center">
-  <picture>
-    <source 
-      media="(prefers-color-scheme: dark)" 
-      srcset="https://github-readme-stats.vercel.app/api?username=not-for-tomorrow&show_icons=true&theme=tokyonight&hide_border=true" />
-    <source 
-      media="(prefers-color-scheme: light)" 
-      srcset="https://github-readme-stats.vercel.app/api?username=not-for-tomorrow&show_icons=true&theme=default&hide_border=true" />
-    <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=not-for-tomorrow&show_icons=true&theme=tokyonight&hide_border=true" />
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source 
-      media="(prefers-color-scheme: dark)" 
-      srcset="https://github-readme-stats.vercel.app/api/top-langs?username=not-for-tomorrow&show_icons=true&locale=en&layout=compact&theme=tokyonight&hide_border=true" />
-    <source 
-      media="(prefers-color-scheme: light)" 
-      srcset="https://github-readme-stats.vercel.app/api/top-langs?username=not-for-tomorrow&show_icons=true&locale=en&layout=compact&theme=default&hide_border=true" />
-    <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs?username=not-for-tomorrow&layout=compact&theme=tokyonight&hide_border=true" />
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source 
-      media="(prefers-color-scheme: dark)" 
-      srcset="https://github-readme-streak-stats.herokuapp.com?user=not-for-tomorrow&theme=tokyonight&hide_border=true" />
-    <source 
-      media="(prefers-color-scheme: light)" 
-      srcset="https://github-readme-streak-stats.herokuapp.com?user=not-for-tomorrow&theme=default&hide_border=true" />
-    <img alt="GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com?user=not-for-tomorrow&theme=tokyonight&hide_border=true" />
-  </picture>
-</p>
-
-## 🏆 Achievements & Profile Stats  
-
-<p align="left">
-  <img src="https://komarev.com/ghpvc/?username=not-for-tomorrow&label=Profile%20views&color=blueviolet&style=flat" alt="views" />
-</p>
-
-<p align="left">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=not-for-tomorrow&theme=tokyonight&margin-w=10&no-frame=true" alt="trophy" />
+<!-- Social Badges with Animation -->
+<p>
+  <a href="https://www.linkedin.com/in/nguy%E1%BB%85n-huy-83a0ab29a/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white&amp;labelColor=0077B5&amp;color=0e76a8" alt="LinkedIn" />
+  </a>
+  <a href="https://twitter.com/nnh49946258">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&amp;logo=twitter&amp;logoColor=white&amp;labelColor=1DA1F2&amp;color=1a91da" alt="Twitter" />
+  </a>
+  <a href="https://www.facebook.com/nguyen.huy.510844/">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&amp;logo=facebook&amp;logoColor=white&amp;labelColor=1877F2&amp;color=166fe5" alt="Facebook" />
+  </a>
+  <a href="https://www.youtube.com/@nguyenhuy7027">
+    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&amp;logo=youtube&amp;logoColor=white&amp;labelColor=FF0000&amp;color=e60000" alt="YouTube" />
+  </a>
+  <a href="https://dev.to/not-for-tomorrow">
+    <img src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&amp;logo=devdotto&amp;logoColor=white&amp;labelColor=0A0A0A&amp;color=000000" alt="Dev.to" />
   </a>
 </p>
 
----
-
-<p align="center">
-  <i>“Code is art — and every line tells a story.”</i> 🚀  
+<!-- Profile Views & Stats -->
+<p>
+  <img src="https://komarev.com/ghpvc/?username=not-for-tomorrow&amp;label=Profile%20Views&amp;color=blueviolet&amp;style=for-the-badge" alt="profile views" />
+  <img src="https://img.shields.io/github/followers/not-for-tomorrow?label=Followers&amp;style=for-the-badge&amp;color=blue" alt="followers" />
+  <img src="https://img.shields.io/github/stars/not-for-tomorrow?label=Total%20Stars&amp;style=for-the-badge&amp;color=yellow" alt="stars" />
 </p>
 
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+</div>
+
+<!-- About Me Section with Animation -->
+<div align="center">
+
+## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"> About Me | 自己紹介
+
+</div>
+
+<div align="center">
+  <img align="center" alt="Coding" width="400" src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif">
+</div>
+
+<!-- Replace original code block with image above and description -->
+<table>
+  <tr>
+    <td>
+    
+```typescript
+const Huy = {
+    pronouns: "He" | "Him",
+    location: "🇻🇳 Vietnam → 🇯🇵 Japan",
+    role: "Bridge System Engineer & Full-Stack Developer",
+    company: "Tech Innovators Inc.",
+    
+    languages: {
+        spoken: ["Vietnamese 🇻🇳", "Japanese 🇯🇵", "English 🇬🇧"],
+        programming: ["TypeScript", "JavaScript", "Java", "Python", "C#", "Go"]
+    },
+    
+    technologies: {
+        frontEnd: {
+            frameworks: ["React", "Next.js", "Vue.js", "Angular", "Svelte"],
+            styling: ["Tailwind CSS", "SCSS", "Styled-Components", "Material-UI"],
+            state: ["Redux", "Zustand", "Recoil", "MobX"],
+            animation: ["Three.js", "GSAP", "Framer Motion", "Lottie"]
+        },
+        backEnd: {
+            nodeJS: ["Express", "NestJS", "Fastify", "Koa"],
+            java: ["Spring Boot", "Spring Cloud", "Hibernate"],
+            python: ["Django", "FastAPI", "Flask"],
+            others: [".NET Core", "Ruby on Rails", "Go Fiber"]
+        },
+        databases: {
+            SQL: ["PostgreSQL", "MySQL", "MS SQL", "Oracle"],
+            NoSQL: ["MongoDB", "Redis", "Cassandra", "DynamoDB"],
+            ORM: ["Prisma", "TypeORM", "Sequelize", "JPA"]
+        },
+        devOps: {
+            containerization: ["Docker", "Kubernetes", "Docker Swarm"],
+            cloud: ["AWS", "Azure", "GCP", "Heroku", "Vercel"],
+            cicd: ["GitHub Actions", "Jenkins", "GitLab CI", "CircleCI"],
+            monitoring: ["Prometheus", "Grafana", "ELK Stack", "Datadog"]
+        },
+        mobile: ["React Native", "Flutter", "Android (Kotlin)", "iOS (Swift)"],
+        design: {
+            tools: ["Figma", "Adobe XD", "Sketch", "InVision"],
+            graphics: ["Photoshop", "Illustrator", "After Effects"],
+            threeD: ["Blender", "Maya", "Cinema 4D", "Substance Painter"]
+        },
+        ai_ml: ["TensorFlow", "PyTorch", "OpenCV", "Scikit-learn", "LangChain"],
+        blockchain: ["Solidity", "Web3.js", "Ethers.js", "Hardhat"]
+    },
+    
+    architecture: ["Microservices", "Event-Driven", "Serverless", "DDD", "Clean Architecture"],
+    
+    currentFocus: [
+        "🎨 Building immersive 3D web experiences",
+        "🤖 Integrating AI into full-stack applications",
+        "🚀 Cloud-native architecture & DevOps",
+        "🎮 Game development with Unity & Unreal"
+    ],
+    
+    hobbies: ["Photography 📸", "3D Modeling 🎨", "Gaming 🎮", "Anime ⛩️"],
+    
+    funFact: "I turn coffee ☕ into code and bugs 🐛 into features ✨",
+    
+    lifeMotto: "Code with passion, design with purpose, live with curiosity 🚀"
+};
+```
+  </tr>
+</table>
+
+
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<!-- Current Focus with Animated Icons -->
+<div align="center">
+
+## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="32"> Current Focus & Goals
+
+</div>
+
+<table align="center">
+<tr>
+<td width="50%" valign="top">
+
+### 💻 Development
+- 🌐 Building **Next.js 14** portfolio with **Three.js**
+- 🤖 Exploring **GPT-4** & **LLM** integration
+- 🎮 Creating games with **Unity** & **Unreal Engine 5**
+- 📱 Cross-platform apps with **React Native**
+- ⛓️ **Web3** & **Smart Contract** development
+- 🚀 **Microservices** architecture with **Docker/K8s**
+
+</td>
+<td width="50%" valign="top">
+
+### 🎨 Design & 3D
+- 🔮 Advanced **Blender** procedural modeling
+- ✨ **Motion Graphics** with After Effects
+- 🎬 **WebGL** interactive experiences
+- 🖼️ **NFT** artwork & generative art
+- 🎪 **VR/AR** prototyping with **A-Frame**
+- 🌊 Shader programming with **GLSL**
+
+</td>
+</tr>
+</table>
+
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<!-- Tech Stack with Skill Icons -->
+<div align="center">
+
+## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="40"> Tech Stack & Tools
+
+</div>
+
+### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="30"> Programming Languages
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,ts,java,python,cpp,cs,go,rust,kotlin,swift,ruby,php&perline=12" />
+  </a>
+</p>
+
+### <img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="30"> Frontend Development
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,nextjs,vue,nuxtjs,angular,svelte,redux,threejs,tailwind,bootstrap,materialui,sass,html,css&perline=14" />
+  </a>
+</p>
+
+### <img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="30"> Backend Development
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,spring,django,flask,fastapi,dotnet,rails,laravel,graphql,apollo&perline=12" />
+  </a>
+</p>
+
+### <img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="30"> Databases & Caching
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=mongodb,mysql,postgresql,redis,sqlite,firebase,supabase,prisma&perline=8" />
+  </a>
+</p>
+
+### ☁️ Cloud & DevOps
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=aws,azure,gcp,docker,kubernetes,jenkins,githubactions,terraform,nginx,vercel,netlify,heroku&perline=12" />
+  </a>
+</p>
+
+### 📱 Mobile Development
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,flutter,kotlin,swift,androidstudio,xcode&perline=6" />
+  </a>
+</p>
+
+### 🎨 Design & 3D Tools
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=figma,xd,ps,ai,ae,blender,unity,unreal,godot&perline=9" />
+  </a>
+</p>
+
+### 🔧 Development Tools
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,github,gitlab,vscode,idea,postman,webpack,vite,npm,yarn,linux,bash&perline=12" />
+  </a>
+</p>
+
+### 🤖 AI/ML & Data Science
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,opencv,sklearn&perline=4" />
+  </a>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white" />
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white" />
+  <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat&logo=huggingface&logoColor=black" />
+</p>
+
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<!-- GitHub Stats with Multiple Themes -->
+<div align="center">
+
+## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"> GitHub Statistics
+
+</div>
+
+<!-- Main Stats Cards -->
+<div align="center">
+  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=not-for-tomorrow&show_icons=true&count_private=true&hide_border=true&title_color=00D9FF&icon_color=00D9FF&text_color=c9d1d9&bg_color=0d1117&include_all_commits=true&custom_title=GitHub%20Stats" alt="GitHub Stats" />
+  <img width="49%" height="195px" src="https://github-readme-streak-stats.herokuapp.com/?user=not-for-tomorrow&theme=black-ice&hide_border=true&stroke=0000&background=0D1117&ring=00D9FF&fire=00D9FF&currStreakLabel=00D9FF" alt="Streak Stats" />
+</div>
+
+<!-- Languages & Activity Graph -->
+<div align="center">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=not-for-tomorrow&layout=compact&hide_border=true&title_color=00D9FF&text_color=c9d1d9&bg_color=0d1117&langs_count=10&hide=html,css&card_width=400" />
+  <img width="49%" src="https://github-contributor-stats.vercel.app/api?username=not-for-tomorrow&limit=5&theme=dark&hide_border=true&combine_all_yearly_contributions=true" />
+</div>
+
+<!-- Detailed Stats -->
+<div align="center">
+  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=not-for-tomorrow&theme=github_dark" />
+</div>
+
+<!-- Activity Graph -->
+<div align="center">
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=not-for-tomorrow&bg_color=0d1117&color=00D9FF&line=00D9FF&point=FFFFFF&hide_border=true&area=true&area_color=00D9FF" />
+</div>
+
+<!-- Productive Time & Most Used Languages -->
+<div align="center">
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=not-for-tomorrow&theme=github_dark" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=not-for-tomorrow&theme=github_dark" />
+</div>
+
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+
+
+<!-- WakaTime Stats (Optional - requires WakaTime setup) -->
+<!--
+<div align="center">
+
+## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="35"> Weekly Development Stats
+
+</div>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=not-for-tomorrow&layout=compact&theme=radical&hide_border=true" />
+</div>
+
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+-->
+
+<!-- Featured Projects -->
+<div align="center">
+
+## <img src="https://user-images.githubusercontent.com/74038190/216122041-518ac897-8d92-4c6b-9b3f-ca01dcaf38ee.png" width="35"> Featured Projects
+
+</div>
+
+<div align="center">
+
+<!-- Project 1 -->
+<a href="https://github.com/not-for-tomorrow/koi-express">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=not-for-tomorrow&repo=koi-express&theme=radical&hide_border=true&title_color=00D9FF&icon_color=00D9FF&text_color=c9d1d9&bg_color=0d1117" />
+</a>
+
+<!-- Project 2 -->
+<a href="https://github.com/JustOnlyFan">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=not-for-tomorrow&repo=JustOnlyFan&theme=radical&hide_border=true&title_color=00D9FF&icon_color=00D9FF&text_color=c9d1d9&bg_color=0d1117" />
+</a>
+
+</div>
+
+<br/>
+
+<table align="center">
+<tr>
+<td width="50%" valign="top">
+
+### 🚚 [Koi Express](https://github.com/not-for-tomorrow/koi-express)
+
+**Professional Koi Fish Transportation System**
+
+<img src="https://skillicons.dev/icons?i=react,nodejs,mongodb,express,tailwind" />
+
+**Features:**
+- 📦 Advanced booking system with real-time tracking
+- 💰 Dynamic pricing calculator based on distance & fish size
+- 📊 Admin dashboard with analytics
+- ⭐ Customer feedback & rating system
+- 🔔 Real-time notifications
+- 📱 Responsive design for all devices
+
+**Highlights:**
+- RESTful API architecture
+- JWT authentication
+- Payment gateway integration
+- Google Maps integration
+
+</td>
+<td width="50%" valign="top">
+
+### 🌬️ [OnlyfanShop](https://github.com/JustOnlyFan)
+
+**Full-Stack E-Commerce Platform**
+
+<img src="https://skillicons.dev/icons?i=java,spring,mysql,androidstudio,kotlin" />
+
+**Features:**
+- 🛒 Complete e-commerce functionality
+- 📱 Native Android mobile app
+- 🔐 Secure user authentication
+- 💳 Multiple payment methods
+- 📦 Order tracking & management
+- 🎨 Modern Material Design UI
+
+**Highlights:**
+- Spring Boot microservices
+- Android native development
+- RESTful API
+- Real-time inventory management
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 📖 [Surplus Value Notebook](https://github.com/not-for-tomorrow/Surplus-Value-Notebook)
+
+**3D Interactive Web Experience**
+
+<img src="https://skillicons.dev/icons?i=threejs,react,blender,vite,tailwind" />
+
+**Features:**
+- 🎮 Immersive 3D environment
+- 🎨 Custom 3D models from Blender
+- ⚡ Physics simulation
+- 🖱️ Interactive controls
+- 📱 Mobile-optimized experience
+- 🌟 Shader effects & animations
+
+**Highlights:**
+- WebGL performance optimization
+- Custom GLSL shaders
+- Responsive 3D scenes
+- Modern React architecture
+
+</td>
+<td width="50%" valign="top">
+
+### 🎨 More Amazing Projects
+
+**Currently Building:**
+
+🤖 **AI-Powered Code Assistant**
+- LangChain + OpenAI integration
+- VS Code extension
+- Real-time code suggestions
+
+🎮 **3D Metaverse Platform**
+- Unity multiplayer
+- Web3 integration
+- NFT marketplace
+
+📱 **Social Media App**
+- React Native
+- Real-time chat
+- Story features
+
+💼 **Portfolio Website**
+- Next.js 14
+- Three.js animations
+- CMS integration
+
+</td>
+</tr>
+</table>
+
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<!-- Skills Progress Bars -->
+<div align="center">
+
+## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="35"> Skill Proficiency
+
+</div>
+
+```text
+JavaScript/TypeScript  ████████████████████░   95%
+React/Next.js          ███████████████████░░   90%
+Node.js/Express        ██████████████████░░░   85%
+Java/Spring Boot       ████████████████░░░░░   80%
+Python/Django          ███████████████░░░░░░   75%
+3D Design/Blender      ██████████████░░░░░░░   70%
+UI/UX Design           ████████████████░░░░░   80%
+DevOps/Cloud           ██████████████░░░░░░░   70%
+Mobile Development     ███████████████░░░░░░   75%
+AI/ML Integration      ████████████░░░░░░░░░   60%
+```
+
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<!-- Random Dev Quote -->
+<div align="center">
+
+## <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="35"> Quote of the Day
+
+</div>
+
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
+</div>
+
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<!-- Spotify (Optional) -->
+<!--
+<div align="center">
+
+## <img src="https://media.giphy.com/media/j0HjChGV0J44KrrlGv/giphy.gif" width="35"> Spotify Playing
+
+</div>
+
+<div align="center">
+  <img src="https://spotify-github-profile.vercel.app/api/view?uid=YOUR_SPOTIFY_ID&cover_image=true&theme=novatorem&show_offline=false&background_color=0d1117&interchange=true&bar_color=00D9FF&bar_color_cover=false" alt="Spotify Now Playing" />
+</div>
+
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+-->
+
+<!-- Blog Posts (Optional - requires RSS feed) -->
+<!--
+<div align="center">
+
+## <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" width="35"> Latest Blog Posts
+
+</div>
+
+📝 [How I Built a 3D Portfolio with Three.js](#)  
+📝 [Microservices Architecture: Best Practices](#)  
+📝 [React Performance Optimization Tips](#)  
+📝 [Getting Started with Blender for Web Developers](#)  
+📝 [AI Integration in Modern Web Apps](#)  
+
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+-->
+
+<!-- Support/Donate Section -->
+<div align="center">
+
+## <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="35"> Support My Work
+
+</div>
+
+<div align="center">
+  
+If you like my work and want to support me, consider buying me a coffee! ☕
+
+<a href="https://www.buymeacoffee.com/notfortomorrow">
+  <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=notfortomorrow&button_colour=FF5F5F&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" />
+</a>
+
+<p>Or support through:</p>
+
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/yourpaypal)
+[![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/notfortomorrow)
+[![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://patreon.com/notfortomorrow)
+
+</div>
+
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<!-- Connect Section -->
+<div align="center">
+
+## <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Handshake.gif" width="60"> Let's Connect & Collaborate!
+
+</div>
+
+<div align="center">
+
+### 💬 I'm always open to interesting conversations and collaboration!
+
+<p>
+  <a href="mailto:huy.nguyen@example.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://www.linkedin.com/in/nguy%E1%BB%85n-huy-83a0ab29a/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://twitter.com/nnh49946258">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+  </a>
+  <a href="https://discord.gg/yourlink">
+    <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" />
+  </a>
+  <a href="https://t.me/yourhandle">
+    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />
+  </a>
+  <a href="https://instagram.com/yourhandle">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
+</p>
+
+### 📬 Or drop me a line at: **huy.nguyen@example.com**
+
+<p>I typically respond within 24 hours! 🚀</p>
+
+</div>
+
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<!-- Fun Facts Section -->
+<div align="center">
+
+## <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="35"> Fun Facts About Me
+
+</div>
+
+<table align="center">
+<tr>
+<td valign="top" width="33%">
+
+### 💻 As a Developer
+- 🌙 Night owl - best code after 10 PM
+- ☕ Powered by coffee & Lo-fi music
+- 🐛 I speak fluent "Stack Overflow"
+- 🎯 10x developer? More like 1x with 10 coffees
+
+</td>
+<td valign="top" width="33%">
+
+### 🎨 As a Designer
+- 🎨 Pixel perfectionist
+- 🌈 Color theory enthusiast
+- 🖱️ Can spend hours on button hover effects
+- 📐 Golden ratio is my best friend
+
+</td>
+<td valign="top" width="33%">
+
+### 🌏 As a Person
+- 🍜 Ramen connoisseur
+- 📺 Anime & J-Drama fan
+- 🎮 Weekend gamer
+- ✈️ Travel & photography lover
+- 📚 Continuous learner
+
+</td>
+</tr>
+</table>
+
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<!-- Footer -->
+<div align="center">
+
+### ⚡ "First, solve the problem. Then, write the code." — John Johnson
+
+<br/>
+
+### ✨ "The best error message is the one that never shows up." ✨
+
+<br/>
+
+### 🚀 "Code is like humor. When you have to explain it, it's bad." — Cory House
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=150&section=footer&text=Thanks%20for%20visiting!&fontSize=40&fontAlignY=70&animation=twinkling" />
+
+### Show some ❤️ by starring some of the repositories!
+
+![Visitor Count](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=github.com/not-for-tomorrow&title=Visitors&edge_flat=false)
+
+</div>
