@@ -21,7 +21,7 @@
   <a href="https://www.youtube.com/@nguyenhuy7027">
     <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&amp;logo=youtube&amp;logoColor=white&amp;labelColor=FF0000&amp;color=e60000" alt="YouTube" />
   </a>
-  <a href="https://dev.to/not-for-tomorrow">
+  <a href="https://dev.to/notfortomorrow">
     <img src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&amp;logo=devdotto&amp;logoColor=white&amp;labelColor=0A0A0A&amp;color=000000" alt="Dev.to" />
   </a>
 </p>
@@ -538,7 +538,7 @@ AI/ML Integration      ████████████░░░░░░░
 ### 💬 I'm always open to interesting conversations and collaboration!
 
 <p>
-  <a href="mailto:huy.nguyen@example.com">
+  <a href="mailto:nhathuyn1369@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
   <a href="https://www.linkedin.com/in/nguy%E1%BB%85n-huy-83a0ab29a/">
@@ -547,13 +547,10 @@ AI/ML Integration      ████████████░░░░░░░
   <a href="https://twitter.com/nnh49946258">
     <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
   </a>
-  <a href="https://discord.gg/yourlink">
+  <a href="https://discord.gg/RAJArs7U">
     <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" />
   </a>
-  <a href="https://t.me/yourhandle">
-    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />
-  </a>
-  <a href="https://instagram.com/yourhandle">
+  <a href="https://www.instagram.com/nhathuyn276/">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
   </a>
 </p>
@@ -626,7 +623,5 @@ AI/ML Integration      ████████████░░░░░░░
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=150&section=footer&text=Thanks%20for%20visiting!&fontSize=40&fontAlignY=70&animation=twinkling" />
 
 ### Show some ❤️ by starring some of the repositories!
-
-![Visitor Count](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=github.com/not-for-tomorrow&title=Visitors&edge_flat=false)
 
 </div>
