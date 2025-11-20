@@ -3,8 +3,9 @@
 <!-- Animated Header -->
 <img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=6,11,20&amp;height=300&amp;section=header&amp;text=Huy%20Nguyen%20%7C%20%E4%B8%80%E7%95%AA%E3%83%95%E3%82%A4&amp;fontSize=50&amp;animation=twinkling" />
 
-<!-- Typing Animation -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&amp;size=22&amp;duration=3000&amp;pause=1000&amp;color=00D9FF&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;width=800&amp;height=100&amp;lines=Welcome+to+my+Digital+Space+%F0%9F%8C%8F;Bridging+Technology+%26+Creativity;Building+the+Future%2C+One+Commit+at+a+Time+%F0%9F%9A%80" alt="Typing SVG" />
+<!-- Typing Animation with Custom Introduction -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&amp;size=20&amp;duration=3000&amp;pause=2000&amp;color=00D9FF&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;width=900&amp;height=110&amp;lines=Hi+%F0%9F%91%8B%2C+I'm+Huy%2C+%E7%A7%81%E3%81%AE%E5%90%8D%E5%89%8D%E3%81%AF%E4%B8%80%E7%95%AA%E3%83%95%E3%82%A4%E3%81%A0%E3%82%88;Full-Stack+Developer+%7C+Front-End+Enthusiast+%7C+2D+%26+3D+Graphic+Designer" alt="Typing SVG" />
+
 
 <!-- Social Badges with Animation -->
 <p>
@@ -54,16 +55,41 @@
     
 ```typescript
 const Huy = {
-    pronouns: "He" | "Him",
+    // --- General Profile ---
+    pronouns: "He" as const,
+    pronounsAlt: "Him" as const,
     location: "🇻🇳 Vietnam → 🇯🇵 Japan",
     role: "Bridge System Engineer & Full-Stack Developer",
     company: "Tech Innovators Inc.",
-    
+
+    // --- About Me / Introduction ---
+    aboutMe: {
+        heading: "🌟 About Me | 自己紹介",
+        description: [
+            "こんにちは！私は <b>フイ (Huy)</b> です。",
+            "日本とベトナムの技術をつなぐ <b>ブリッジSE（Bridge System Engineer）</b>、そして",
+            "コードとデザインの融合を愛する <b>Full-Stack Developer & Creative Designer</b> です。"
+        ]
+    },
+    introduction: {
+        heading: "💡 Introduction | 紹介",
+        en:
+`I’m **Huy Nguyen**, a **Full-Stack Developer** and **Design Enthusiast** who bridges **technology and creativity**.
+With hands-on experience in both **software engineering** and **2D/3D design**, 
+I aim to build applications that are not only functional — but also visually inspiring.`,
+        ja:
+`日本と海外チームの両方で開発経験があり、
+**技術 × デザイン × コミュニケーション** の力で、
+価値のあるプロダクトを作ることを目指しています。`
+    },
+
+    // --- Languages ---
     languages: {
         spoken: ["Vietnamese 🇻🇳", "Japanese 🇯🇵", "English 🇬🇧"],
         programming: ["TypeScript", "JavaScript", "Java", "Python", "C#", "Go"]
     },
-    
+
+    // --- Technologies ---
     technologies: {
         frontEnd: {
             frameworks: ["React", "Next.js", "Vue.js", "Angular", "Svelte"],
@@ -97,22 +123,32 @@ const Huy = {
         ai_ml: ["TensorFlow", "PyTorch", "OpenCV", "Scikit-learn", "LangChain"],
         blockchain: ["Solidity", "Web3.js", "Ethers.js", "Hardhat"]
     },
-    
-    architecture: ["Microservices", "Event-Driven", "Serverless", "DDD", "Clean Architecture"],
-    
+
+    // --- Architecture Paradigms ---
+    architecture: [
+        "Microservices", "Event-Driven", "Serverless", "DDD", "Clean Architecture"
+    ],
+
+    // --- Current Focus ("🚀 Current Focus | 現在の目標") ---
     currentFocus: [
+        "🧩 Building my personal portfolio website using React.js, Three.js, and Next.js",
+        "🎨 Exploring Blender for 3D modeling and interactive UI concepts",
+        "🤖 Learning LLM tools (LM Studio) and integrating AI into creative workflows",
         "🎨 Building immersive 3D web experiences",
         "🤖 Integrating AI into full-stack applications",
         "🚀 Cloud-native architecture & DevOps",
         "🎮 Game development with Unity & Unreal"
     ],
-    
-    hobbies: ["Photography 📸", "3D Modeling 🎨", "Gaming 🎮", "Anime ⛩️"],
-    
+
+    // --- Fun / Personality ---
+    hobbies: [
+        "Photography 📸", "3D Modeling 🎨", "Gaming 🎮", "Anime ⛩️"
+    ],
     funFact: "I turn coffee ☕ into code and bugs 🐛 into features ✨",
-    
     lifeMotto: "Code with passion, design with purpose, live with curiosity 🚀"
 };
+
+export default Huy;
 ```
   </tr>
 </table>
