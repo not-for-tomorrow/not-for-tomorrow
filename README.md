@@ -526,31 +526,6 @@ AI/ML Integration      ████████████░░░░░░░
 <img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 -->
 
-<!-- Support/Donate Section -->
-<div align="center">
-
-## <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="35"> Support My Work
-
-</div>
-
-<div align="center">
-  
-If you like my work and want to support me, consider buying me a coffee! ☕
-
-<a href="https://www.buymeacoffee.com/notfortomorrow">
-  <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=notfortomorrow&button_colour=FF5F5F&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" />
-</a>
-
-<p>Or support through:</p>
-
-[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/yourpaypal)
-[![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/notfortomorrow)
-[![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://patreon.com/notfortomorrow)
-
-</div>
-
-<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
 <!-- Connect Section -->
 <div align="center">
 
@@ -583,7 +558,7 @@ If you like my work and want to support me, consider buying me a coffee! ☕
   </a>
 </p>
 
-### 📬 Or drop me a line at: **huy.nguyen@example.com**
+### 📬 Or drop me a line at: **nhathuyn1369@gmail.com**
 
 <p>I typically respond within 24 hours! 🚀</p>
 
