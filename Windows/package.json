@@ -1,0 +1,15 @@
+{
+  "name": "windows",
+  "version": "1.0.0",
+  "description": "Desktop app container for admin/operator workflows on Windows.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^41.7.0"
+  }
+}

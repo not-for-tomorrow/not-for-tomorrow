@@ -1,0 +1,1382 @@
+# SUPERAPP PORTFOLIO - SESSION LOG
+
+## Session Template
+Copy this block for each working session:
+
+```md
+## Session YYYY-MM-DD #N
+- Goal:
+- Files touched:
+- Completed:
+- In progress:
+- Blockers/Risks:
+- Next session plan:
+```
+
+---
+
+## Session 2026-05-23 #1
+- Goal: Bootstrap hybrid workspace and align structure with `Gom hết.docx`.
+- Files touched:
+  - `FE/**`
+  - `BE/**`
+  - `Py/**`
+  - `Mobile/**`
+  - `Windows/**`
+  - `doc/PROJECT_BOOTSTRAP.md`
+  - `doc/SUPERAPP_PORTFOLIO_MASTERPLAN.md`
+- Completed:
+  - Created core folders and baseline app skeletons.
+  - Added BE health and security skeleton.
+  - Added Py FastAPI health endpoint.
+  - Added Electron desktop shell.
+  - Created master plan mapped to super portfolio vision.
+- In progress:
+  - Production-grade monorepo tooling.
+- Blockers/Risks:
+  - BE cannot run yet without Maven installed/wrapper.
+  - Node version is below recommended for newest React Native toolchain.
+- Next session plan:
+  - Build flagship AI module (SSE stream) end-to-end.
+
+## Session 2026-05-23 #2
+- Goal: Implement flagship AI Chat SSE module and root run scripts.
+- Files touched:
+  - `BE/src/main/java/com/superapp/ai/AiChatController.java`
+  - `BE/src/main/java/com/superapp/config/CorsConfig.java`
+  - `BE/src/main/java/com/superapp/config/SecurityConfig.java`
+  - `FE/src/App.*`
+  - `FE/src/main.*`
+  - `FE/package.json`
+  - `package.json` (root)
+- Completed:
+  - Implemented SSE endpoint and frontend streaming chat demo.
+  - Added root scripts for multi-app dev commands.
+  - Stabilized FE build on current Node by using Vite 5.
+- In progress:
+  - Backend runtime verification with full BE run.
+- Blockers/Risks:
+  - Maven missing on local machine.
+- Next session plan:
+  - Add Maven Wrapper and run BE locally.
+
+## Session 2026-05-23 #3
+- Goal: Unify FE and Mobile to JavaScript/JSX only.
+- Files touched:
+  - `FE/package.json`
+  - `FE/src/App.jsx`
+  - `FE/src/main.jsx`
+  - `FE/index.html`
+  - `FE/README.md`
+  - `Mobile/package.json`
+  - `Mobile/App.jsx`
+  - `Mobile/index.js`
+  - `Mobile/README.md`
+- Completed:
+  - Converted FE from TS/TSX to JSX.
+  - Converted Mobile from TS/TSX to JSX.
+  - Removed TS configs from FE/Mobile app sources.
+- In progress:
+  - Upgrade Node runtime to satisfy React Native engine constraints.
+- Blockers/Risks:
+  - Node currently below React Native recommended minimum.
+- Next session plan:
+  - Implement Mobile AI chat screen using shared API contract.
+
+## Session 2026-05-23 #4
+- Goal: Split detailed phase roadmap and continue Phase 2 with Mobile SSE chat.
+- Files touched:
+  - `doc/PHASE_ROADMAP_DETAILED.md`
+  - `doc/SUPERAPP_PORTFOLIO_MASTERPLAN.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `Mobile/App.jsx`
+  - `Mobile/package.json`
+- Completed:
+  - Added detailed phase-by-phase roadmap with goals/deliverables/exit criteria.
+  - Implemented Mobile AI chat screen in JSX using SSE client (`react-native-sse`).
+- In progress:
+  - Runtime verification on emulator/device with BE running.
+- Blockers/Risks:
+  - `BE` still needs Maven runtime availability to start quickly.
+  - React Native engine warning due to current Node version.
+- Next session plan:
+  - Add Maven wrapper or install Maven, run BE, and validate FE + Mobile streaming end-to-end.
+
+## Session 2026-05-23 #5
+- Goal: Continue implementation with Phase 1 auth skeleton in backend.
+- Files touched:
+  - `BE/pom.xml`
+  - `BE/src/main/resources/application.yml`
+  - `BE/src/main/java/com/superapp/config/SecurityConfig.java`
+  - `BE/src/main/java/com/superapp/auth/**`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Added H2 runtime config for local development.
+  - Implemented auth domain skeleton: `UserAccount`, `Role`, repository.
+  - Implemented endpoints:
+    - `POST /api/auth/register`
+    - `POST /api/auth/login`
+    - `GET /api/profile/me` (Bearer token)
+  - Added token issuing/verification service (HMAC-based dev token).
+- In progress:
+  - Runtime verification pending because BE runner toolchain is not fully available.
+- Blockers/Risks:
+  - Still need Maven wrapper/global Maven to run and verify API.
+  - Current token implementation is development-level, not production JWT.
+- Next session plan:
+  - Add `mvnw`, boot backend, run API smoke test for auth + SSE.
+
+## Session 2026-05-23 #6
+- Goal: Add Maven Wrapper and run backend smoke tests.
+- Files touched:
+  - `BE/mvnw`
+  - `BE/mvnw.cmd`
+  - `BE/.mvn/wrapper/*`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Added Maven Wrapper to backend project.
+  - Started backend successfully via `mvnw.cmd spring-boot:run`.
+  - Verified endpoints:
+    - `GET /api/health`
+    - `POST /api/auth/register`
+    - `POST /api/auth/login`
+    - `GET /api/profile/me`
+    - `GET /api/ai/chat/stream?prompt=hello` (SSE token stream)
+- In progress:
+  - Mobile emulator/device verification against the same SSE endpoint.
+- Blockers/Risks:
+  - React Native toolchain still warns about Node engine version.
+- Next session plan:
+  - Validate Mobile SSE on emulator, then move to OAuth2 + JWT production-grade token.
+
+## Session 2026-05-23 #7
+- Goal: Upgrade token mechanism from dev token format to JWT standard.
+- Files touched:
+  - `BE/pom.xml`
+  - `BE/src/main/resources/application.yml`
+  - `BE/src/main/java/com/superapp/auth/TokenService.java`
+  - `BE/src/main/java/com/superapp/auth/dto/AuthResponse.java`
+  - `BE/src/main/java/com/superapp/auth/AuthService.java`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Integrated `jjwt` dependencies.
+  - Replaced custom token format with JWT HS256, `iat`, `exp`, `sub`.
+  - Added `tokenType` and `expiresIn` in auth responses.
+  - Re-verified runtime flows: register/login/profile and SSE stream.
+- In progress:
+  - Mobile device/emulator validation for the same backend.
+- Blockers/Risks:
+  - JWT secret still from local config and must be externalized by environment in deployment.
+- Next session plan:
+  - Add OAuth2 login skeleton and environment-based secure config handling.
+
+## Session 2026-05-23 #8
+- Goal: Move JWT handling into Spring Security filter chain and enforce protected routes.
+- Files touched:
+  - `BE/src/main/java/com/superapp/config/JwtAuthenticationFilter.java`
+  - `BE/src/main/java/com/superapp/config/SecurityConfig.java`
+  - `BE/src/main/java/com/superapp/auth/ProfileController.java`
+  - `BE/src/main/java/com/superapp/auth/AuthService.java`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Added `JwtAuthenticationFilter` (OncePerRequestFilter) to parse Bearer token and set security context.
+  - Updated security policy:
+    - Public: `/api/health`, `/api/auth/**`, `/api/ai/chat/stream`
+    - Protected: `/api/profile/**`
+  - Updated profile endpoint to use authenticated principal from security context.
+  - Re-tested runtime:
+    - Unauthorized profile blocked.
+    - Authorized profile succeeds with JWT.
+    - SSE endpoint remains public and working.
+- In progress:
+  - Fine-grained role-based authorization for admin/editor/moderator routes.
+- Blockers/Risks:
+  - Unauthorized currently returns 403 by default; may switch to explicit 401 response strategy.
+- Next session plan:
+  - Add OAuth2 skeleton and role-protected admin sample endpoints.
+
+## Session 2026-05-23 #9
+- Goal: Continue Phase 1 by adding RBAC demo endpoints and OAuth2 skeleton APIs.
+- Files touched:
+  - `BE/src/main/java/com/superapp/demo/AdminController.java`
+  - `BE/src/main/java/com/superapp/demo/EditorController.java`
+  - `BE/src/main/java/com/superapp/config/MethodSecurityConfig.java`
+  - `BE/src/main/java/com/superapp/config/DevDataSeeder.java`
+  - `BE/src/main/java/com/superapp/auth/oauth/OAuthProvider.java`
+  - `BE/src/main/java/com/superapp/auth/oauth/OAuthSkeletonController.java`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Added method-level RBAC with `@PreAuthorize`.
+  - Added role-protected endpoints:
+    - `GET /api/admin/ping`
+    - `GET /api/editor/ping`
+  - Seeded dev users for RBAC validation (`admin`, `editor`).
+  - Added OAuth2 skeleton endpoints:
+    - `GET /api/auth/oauth2/providers`
+    - `GET /api/auth/oauth2/{provider}/authorize-url`
+  - Verified runtime:
+    - Editor denied on admin route.
+    - Editor allowed on editor route.
+    - Admin allowed on admin route.
+- In progress:
+  - Real OAuth2 provider integration (Google/GitHub) and callback flow.
+- Blockers/Risks:
+  - Seed credentials are for local/dev only and must not be used in production.
+- Next session plan:
+  - Implement real OAuth2 login (Google first), user linking, and JWT issuing after callback.
+
+## Session 2026-05-23 #10
+- Goal: Continue OAuth2 by implementing Google authorize/callback scaffold with user linking and JWT issue.
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/oauth/GoogleOAuthProperties.java`
+  - `BE/src/main/java/com/superapp/auth/oauth/OAuthStateStore.java`
+  - `BE/src/main/java/com/superapp/auth/oauth/GoogleOAuthService.java`
+  - `BE/src/main/java/com/superapp/auth/oauth/OAuthSkeletonController.java`
+  - `BE/src/main/java/com/superapp/auth/oauth/dto/OAuthCallbackResponse.java`
+  - `BE/src/main/java/com/superapp/auth/AuthService.java`
+  - `BE/src/main/resources/application.yml`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Added Google OAuth config properties and state store (anti-CSRF state).
+  - Added Google OAuth service:
+    - build authorize URL
+    - exchange code for Google token
+    - fetch Google user info
+    - auto-create/link local user
+    - issue local JWT
+  - Added callback response DTO.
+  - Updated OAuth controller:
+    - Google endpoint now tries real flow when env is configured
+    - fallback to `not_configured` status when env is missing
+- In progress:
+  - Live provider verification with real Google credentials.
+- Blockers/Risks:
+  - Without Google client credentials, callback cannot be validated end-to-end.
+- Next session plan:
+  - Set env secrets locally, run full Google OAuth login, then integrate FE login button flow.
+
+## Session 2026-05-23 #11
+- Goal: Continue by integrating OAuth2 flow on FE for end-to-end web login experience.
+- Files touched:
+  - `FE/src/App.jsx`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Added FE auth panel:
+    - register/login with email-password
+    - Google login button (`/api/auth/oauth2/google/authorize-url`)
+    - callback handling for `code/state` from URL
+    - JWT localStorage persistence
+    - profile fetch via `/api/profile/me`
+  - Kept SSE chat module intact in same screen.
+  - Verified FE build succeeds.
+- In progress:
+  - Live OAuth verification with real Google credentials.
+- Blockers/Risks:
+  - Without valid Google client credentials, FE Google login will return backend `not_configured`.
+- Next session plan:
+  - Set Google env vars and run complete browser redirect callback verification.
+
+## Session 2026-05-23 #12
+- Goal: Continue backend hardening and improve FE role testing UX.
+- Files touched:
+  - `BE/src/main/java/com/superapp/config/RestAuthEntryPoint.java`
+  - `BE/src/main/java/com/superapp/config/RestAccessDeniedHandler.java`
+  - `BE/src/main/java/com/superapp/config/SecurityConfig.java`
+  - `BE/pom.xml`
+  - `FE/src/App.jsx`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Added consistent JSON responses for auth failures:
+    - 401 unauthorized
+    - 403 forbidden
+  - Integrated handlers into Spring Security exception handling.
+  - Added FE RBAC test buttons (`/api/editor/ping`, `/api/admin/ping`) using current JWT.
+  - Fixed Spring Boot plugin startup ambiguity by explicitly setting `mainClass` in `pom.xml`.
+  - Verified runtime:
+    - No token -> 401 JSON response
+    - Insufficient role -> 403 JSON response
+- In progress:
+  - Live Google OAuth browser verification with real credentials.
+- Blockers/Risks:
+  - OAuth live verification blocked until Google env credentials are provided.
+- Next session plan:
+  - Add `.env`-style run guide for BE and complete Google callback live test.
+
+## Session 2026-05-23 #13
+- Goal: Prepare live OAuth execution with environment-driven configuration.
+- Files touched:
+  - `BE/.env.example`
+  - `BE/src/main/resources/application.yml`
+  - `FE/.env.example`
+  - `FE/src/App.jsx`
+  - `doc/OAUTH_LIVE_SETUP.md`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Added backend and frontend `.env.example` templates.
+  - Switched JWT secret/expiration in BE to environment-based configuration with defaults.
+  - Switched FE API base URL to `VITE_API_BASE_URL`.
+  - Added dedicated live OAuth setup guide.
+  - Verified FE build passes after env-based changes.
+- In progress:
+  - Full browser-based Google login verification with real credentials.
+- Blockers/Risks:
+  - Live OAuth still requires valid Google client credentials from project owner.
+- Next session plan:
+  - Execute live OAuth test and mark OAuth2 login as done if successful.
+
+## Session 2026-05-23 #14
+- Goal: Continue User Management hardening with stronger password policy and profile update API.
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/PasswordPolicyService.java`
+  - `BE/src/main/java/com/superapp/auth/AuthService.java`
+  - `BE/src/main/java/com/superapp/auth/ProfileController.java`
+  - `BE/src/main/java/com/superapp/auth/dto/UpdateProfileRequest.java`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Added backend password policy validation for register flow.
+  - Added `PATCH /api/profile/me` to update `displayName` for authenticated user.
+  - Verified runtime:
+    - Weak password register returns `400`
+    - Profile update endpoint returns updated profile
+- In progress:
+  - Phone-based login path and device/session management.
+- Blockers/Risks:
+  - None blocking current local flow.
+- Next session plan:
+  - Add refresh token + logout-all-devices/session tracking skeleton.
+
+## Session 2026-05-23 #15
+- Goal: Implement refresh token/session management skeleton and logout-all flow.
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/SessionToken.java`
+  - `BE/src/main/java/com/superapp/auth/SessionTokenRepository.java`
+  - `BE/src/main/java/com/superapp/auth/dto/TokenPairResponse.java`
+  - `BE/src/main/java/com/superapp/auth/dto/RefreshRequest.java`
+  - `BE/src/main/java/com/superapp/auth/AuthService.java`
+  - `BE/src/main/java/com/superapp/auth/AuthController.java`
+  - `BE/src/main/resources/application.yml`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Added refresh-token-backed session storage table.
+  - Changed register/login to return access+refresh token pair.
+  - Added endpoints:
+    - `POST /api/auth/refresh`
+    - `POST /api/auth/logout` (revoke current refresh session)
+    - `DELETE /api/auth/logout-all` (revoke all sessions for current user)
+  - Runtime-verified:
+    - refresh succeeds with valid refresh token
+    - logout current invalidates refresh token
+    - logout-all revokes active sessions
+- In progress:
+  - FE integration for refresh flow and silent token renewal.
+- Blockers/Risks:
+  - Session metadata (device name/IP/UA) not captured yet.
+- Next session plan:
+  - Add FE auth state manager with refresh token lifecycle and automatic retry.
+
+## Session 2026-05-23 #16
+- Goal: Integrate refresh-token lifecycle on FE with automatic retry.
+- Files touched:
+  - `FE/src/App.jsx`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - FE now stores both access and refresh token.
+  - Added `authFetch()` helper:
+    - attach Bearer access token
+    - on `401`, call `/api/auth/refresh`
+    - retry the original request once
+  - Added FE actions:
+    - `Logout` (revoke current refresh session)
+    - `Logout All` (revoke all sessions/devices)
+  - Verified FE production build passes.
+- In progress:
+  - Align Google callback flow to return refresh token too.
+- Blockers/Risks:
+  - OAuth callback currently may return access token only (depends on backend callback response path).
+- Next session plan:
+  - Extend OAuth callback response to include refresh token and unify FE token handling.
+
+## Session 2026-05-23 #17
+- Goal: Unify OAuth callback token contract with standard login/register token pair.
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/oauth/dto/OAuthCallbackResponse.java`
+  - `BE/src/main/java/com/superapp/auth/oauth/GoogleOAuthService.java`
+  - `BE/src/main/java/com/superapp/auth/AuthService.java`
+  - `FE/src/App.jsx`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Changed OAuth callback response to return `tokens` (`access + refresh`) instead of access-only payload.
+  - Added service method to issue full token pair for OAuth-linked users.
+  - Updated FE callback parsing to consume unified token pair shape.
+  - Verified FE build passes.
+- In progress:
+  - Backend full package verification (maven build is timing out in current environment).
+- Blockers/Risks:
+  - Maven package step timed out twice (likely dependency/network latency), so BE compile confirmation is pending.
+- Next session plan:
+  - Run backend startup smoke test locally and validate Google callback payload shape with real credentials.
+
+## Session 2026-05-23 #18
+- Goal: Stabilize runtime with Java 8 compatibility and add repeatable smoke test.
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/AuthController.java`
+  - `BE/src/main/java/com/superapp/auth/oauth/OAuthSkeletonController.java`
+  - `BE/src/main/java/com/superapp/auth/oauth/GoogleOAuthService.java`
+  - `BE/scripts/smoke-auth.ps1`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Replaced all `Map.of(...)` usage (Java 9+) with Java 8-compatible map creation.
+  - Added automated smoke script for:
+    - health
+    - register/login/profile
+    - refresh/logout
+    - SSE stream
+  - Verified smoke test pass end-to-end (executed on alternate port `18080`).
+- In progress:
+  - Cleanup of local process management for repeated local runs.
+- Blockers/Risks:
+  - Local machine had multiple lingering Java processes on `8080`; smoke was validated on `18080` to avoid interference.
+- Next session plan:
+  - Validate live Google OAuth callback payload (`tokens.access + tokens.refresh`) with real credentials and mark OAuth integration done.
+
+## Session 2026-05-23 #19
+- Goal: Continue device/session management with session listing endpoint for account security UI.
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/SessionToken.java`
+  - `BE/src/main/java/com/superapp/auth/SessionTokenRepository.java`
+  - `BE/src/main/java/com/superapp/auth/dto/SessionInfoResponse.java`
+  - `BE/src/main/java/com/superapp/auth/AuthService.java`
+  - `BE/src/main/java/com/superapp/auth/AuthController.java`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Added session creation timestamp (`createdAt`).
+  - Added endpoint `GET /api/auth/sessions`.
+  - Added support to mark which session is current via `X-Refresh-Token`.
+  - Runtime-verified session list returns expected fields.
+- In progress:
+  - FE UI integration for session list and single-session revoke.
+- Blockers/Risks:
+  - Multiple local Java processes can interfere with repeated smoke runs; use one controlled run process.
+- Next session plan:
+  - Integrate FE "Session Manager" panel with list + logout all + revoke current.
+
+## Session 2026-05-23 #20
+- Goal: Integrate FE session manager and add backend endpoint to revoke a single session by id.
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/SessionTokenRepository.java`
+  - `BE/src/main/java/com/superapp/auth/AuthService.java`
+  - `BE/src/main/java/com/superapp/auth/AuthController.java`
+  - `FE/src/App.jsx`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Added endpoint `DELETE /api/auth/sessions/{id}`.
+  - Added FE Session Manager panel:
+    - load sessions
+    - display current/revoked states
+    - revoke non-current session
+  - Verified runtime:
+    - session list returns expected fields
+    - revoke by session id succeeds
+    - post-revoke session state updates correctly
+- In progress:
+  - Capture device metadata (IP/User-Agent/device label) for richer session display.
+- Blockers/Risks:
+  - Local test outputs may vary shape (`object` vs `array`) when only one session exists in PowerShell output formatting.
+- Next session plan:
+  - Add session metadata fields and expose them in API + FE panel.
+
+## Session 2026-05-23 #21
+- Goal: Add device metadata to session records and expose it in Session Manager UI.
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/SessionToken.java`
+  - `BE/src/main/java/com/superapp/auth/dto/ClientInfo.java`
+  - `BE/src/main/java/com/superapp/auth/dto/SessionInfoResponse.java`
+  - `BE/src/main/java/com/superapp/auth/AuthService.java`
+  - `BE/src/main/java/com/superapp/auth/AuthController.java`
+  - `BE/src/main/java/com/superapp/auth/oauth/GoogleOAuthService.java`
+  - `BE/src/main/java/com/superapp/auth/oauth/OAuthSkeletonController.java`
+  - `FE/src/App.jsx`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Added session metadata fields: `ipAddress`, `userAgent`, `deviceLabel`.
+  - Captured metadata on login/register/OAuth callback.
+  - Returned metadata in `/api/auth/sessions`.
+  - Updated FE Session Manager to display metadata.
+  - Verified runtime list includes metadata values.
+- In progress:
+  - Decide privacy/retention policy for session metadata in production.
+- Blockers/Risks:
+  - User-Agent can be long/noisy; FE currently truncates display.
+- Next session plan:
+  - Add optional session cleanup endpoint and periodic prune job for expired sessions.
+
+## Session 2026-05-23 #22
+- Goal: Add automated session cleanup and admin-triggered maintenance endpoint.
+- Files touched:
+  - `BE/src/main/java/com/superapp/config/SchedulingConfig.java`
+  - `BE/src/main/java/com/superapp/auth/SessionMaintenanceService.java`
+  - `BE/src/main/java/com/superapp/demo/AdminMaintenanceController.java`
+  - `BE/src/main/resources/application.yml`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Enabled scheduling infrastructure.
+  - Added periodic expired-session prune job.
+  - Added admin endpoint:
+    - `POST /api/admin/maintenance/sessions/prune`
+  - Runtime-verified:
+    - admin token can prune
+    - editor token is denied with `403`
+- In progress:
+  - Add metrics/logging around prune count for observability dashboard.
+- Blockers/Risks:
+  - Prune endpoint currently returns success message only; no deleted-count metric yet.
+- Next session plan:
+  - Include deleted-count response and expose session maintenance metrics.
+
+## Session 2026-05-23 #23
+- Goal: Improve session maintenance observability and maintenance response details.
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/SessionTokenRepository.java`
+  - `BE/src/main/java/com/superapp/auth/SessionMaintenanceService.java`
+  - `BE/src/main/java/com/superapp/demo/AdminMaintenanceController.java`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Replaced void delete method with count-returning delete query for expired sessions.
+  - Added scheduler logs for prune job results.
+  - Updated admin maintenance endpoint response to include `deletedCount`.
+  - Runtime-verified prune endpoint returns `{ message, deletedCount }`.
+- In progress:
+  - Export maintenance metrics to dashboard stack (Prometheus/Grafana).
+- Blockers/Risks:
+  - Metrics endpoint wiring not added yet.
+- Next session plan:
+  - Add lightweight metrics counters for session create/revoke/prune.
+
+## Session 2026-05-23 #24
+- Goal: Add lightweight runtime metrics for session lifecycle events.
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/SessionMetricsService.java`
+  - `BE/src/main/java/com/superapp/auth/AuthService.java`
+  - `BE/src/main/java/com/superapp/auth/SessionMaintenanceService.java`
+  - `BE/src/main/java/com/superapp/demo/AdminMaintenanceController.java`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Added in-memory counters:
+    - session created
+    - session revoked
+    - session pruned
+  - Wired counters into login/logout/prune flows.
+  - Added admin metrics snapshot endpoint:
+    - `POST /api/admin/maintenance/sessions/metrics`
+  - Runtime-verified counters increment after login/logout/prune actions.
+- In progress:
+  - Export metrics into Prometheus/Grafana pipeline.
+- Blockers/Risks:
+  - Counters are in-memory and reset on service restart (expected for current lightweight phase).
+- Next session plan:
+  - Add persistent audit/event table for session actions and expose dashboard-ready reporting endpoint.
+
+## Session 2026-05-23 #25
+- Goal: Persist session lifecycle audit events and expose reporting endpoint.
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/SessionEventType.java`
+  - `BE/src/main/java/com/superapp/auth/SessionAuditEvent.java`
+  - `BE/src/main/java/com/superapp/auth/SessionAuditEventRepository.java`
+  - `BE/src/main/java/com/superapp/auth/dto/SessionAuditEventResponse.java`
+  - `BE/src/main/java/com/superapp/auth/SessionAuditService.java`
+  - `BE/src/main/java/com/superapp/auth/AuthService.java`
+  - `BE/src/main/java/com/superapp/auth/SessionMaintenanceService.java`
+  - `BE/src/main/java/com/superapp/demo/AdminMaintenanceController.java`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Added persistent audit table for session actions.
+  - Logged events for:
+    - session created
+    - session revoked (current/all)
+    - session pruned
+  - Added admin reporting endpoint:
+    - `POST /api/admin/maintenance/sessions/events`
+  - Runtime-verified endpoint returns latest events with metadata.
+- In progress:
+  - Optional filtering/pagination for audit events.
+- Blockers/Risks:
+  - Current endpoint returns top 100 latest only (fixed-size snapshot).
+- Next session plan:
+  - Add query params for filtering (eventType/user/date range) and pagination.
+
+## Session 2026-05-23 #26
+- Goal: Add filtering and pagination for session audit reporting endpoint.
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/SessionAuditEventRepository.java`
+  - `BE/src/main/java/com/superapp/auth/SessionAuditService.java`
+  - `BE/src/main/java/com/superapp/auth/dto/SessionAuditEventPageResponse.java`
+  - `BE/src/main/java/com/superapp/demo/AdminMaintenanceController.java`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Added searchable paged query for audit events with filters:
+    - event type
+    - user email
+    - from/to datetime
+  - Updated endpoint `POST /api/admin/maintenance/sessions/events` to return paged response.
+  - Runtime-verified filtered query works with page/size.
+- In progress:
+  - Add FE admin panel for viewing filtered audit events.
+- Blockers/Risks:
+  - Invalid datetime format in `from/to` currently throws parse exception (no custom error wrapper yet).
+- Next session plan:
+  - Add FE audit viewer and backend friendly validation error for invalid date filters.
+
+## Session 2026-05-23 #27
+- Goal: Add FE audit viewer and improve backend handling for invalid datetime filters.
+- Files touched:
+  - `BE/src/main/java/com/superapp/common/ApiErrorResponse.java`
+  - `BE/src/main/java/com/superapp/common/GlobalExceptionHandler.java`
+  - `FE/src/App.jsx`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Added FE Session Audit Viewer with:
+    - filters (`eventType`, `userEmail`, `from`, `to`)
+    - pagination (`page`, `size`, next/prev)
+  - Added backend global exception handler for date parsing and status exceptions.
+  - Verified FE build passes.
+  - Verified invalid datetime query returns HTTP `400`.
+- In progress:
+  - Fine-tune FE error rendering for backend validation messages.
+- Blockers/Risks:
+  - Error body extraction from PowerShell test command is inconsistent; status code verification is stable.
+- Next session plan:
+  - Add explicit FE toast/error banner parser for API error payloads.
+
+## Session 2026-05-23 #28
+- Goal: Standardize FE API error rendering across auth/session/audit actions.
+- Files touched:
+  - `FE/src/App.jsx`
+  - `doc/PROGRESS_TRACKER.md`
+- Completed:
+  - Added reusable FE helper to parse backend error payload (`message` / `error`).
+  - Applied unified error handling to:
+    - register/login
+    - profile fetch
+    - logout/logout-all
+    - session list/revoke
+    - audit event loading
+  - Verified FE build passes.
+- In progress:
+  - Optional UX upgrade from inline message to toast notifications.
+- Blockers/Risks:
+  - None blocking; behavior is now consistent with backend error contract.
+- Next session plan:
+  - Add toast component + success/error severity styles and keep inline fallback.
+
+## Session 2026-05-23 #29
+- Goal: Add FE toast notifications for key auth/session/audit actions.
+- Files touched:
+  - `FE/src/App.jsx`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added toast notification UI flow for major actions:
+    - register/login
+    - profile fetch
+    - logout/logout-all
+    - session list/revoke
+    - audit event loading
+  - Preserved existing inline message behavior as fallback.
+  - Verified FE build passes (`vite build`).
+- In progress:
+  - UX fine-tuning for toast stacking/timing and deduping noisy error bursts.
+- Blockers/Risks:
+  - None blocking; current implementation is production-safe for demo usage.
+- Next session plan:
+  - Start backend Account Recovery skeleton (request reset + reset confirm endpoints) and wire minimal FE form.
+
+## Session 2026-05-23 #30
+- Goal: Implement backend Account Recovery skeleton (password reset).
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/AuthController.java`
+  - `BE/src/main/java/com/superapp/auth/PasswordResetService.java`
+  - `BE/src/main/java/com/superapp/auth/PasswordResetToken.java`
+  - `BE/src/main/java/com/superapp/auth/PasswordResetTokenRepository.java`
+  - `BE/src/main/java/com/superapp/auth/dto/PasswordResetRequest.java`
+  - `BE/src/main/java/com/superapp/auth/dto/PasswordResetConfirmRequest.java`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added password reset request endpoint:
+    - `POST /api/auth/password-reset/request`
+  - Added password reset confirm endpoint:
+    - `POST /api/auth/password-reset/confirm`
+  - Implemented one-time reset token flow:
+    - secure random token generation
+    - SHA-256 hash storage (plain token not persisted)
+    - expiration validation
+    - single-use token marking (`used=true`)
+  - Wired reset confirm to existing password policy + password encoder.
+  - Added dev-mode token exposure flag for local FE testing.
+  - Verified backend compiles:
+    - `.\mvnw.cmd -q -DskipTests compile`
+- In progress:
+  - FE reset-password mini form wiring and end-to-end local UX flow.
+- Blockers/Risks:
+  - Real email delivery (SMTP/provider) is not implemented yet; currently local/dev flow.
+- Next session plan:
+  - Add FE "Forgot Password" panel and call new endpoints, then verify FE build and update roadmap.
+
+## Session 2026-05-23 #31
+- Goal: Wire FE account recovery UI to new BE password-reset endpoints.
+- Files touched:
+  - `FE/src/App.jsx`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added FE "Account Recovery" panel with:
+    - request reset by email
+    - confirm reset by token + new password
+  - Integrated both actions with existing API error parser + toast system.
+  - Added dev-token auto-fill support from backend response (`devResetToken`) for local test flow.
+  - Fixed helper function placement so `notify` / `readApiError` execute in component scope.
+  - Verified FE build passes:
+    - `npm run build`
+- In progress:
+  - End-to-end smoke test script for reset flow and login with new password.
+- Blockers/Risks:
+  - Production-grade email delivery and rate-limiting are still pending.
+- Next session plan:
+  - Add backend throttle/cooldown for password reset requests and audit event logging for reset actions.
+
+## Session 2026-05-23 #32
+- Goal: Harden password reset flow with anti-spam cooldown and audit coverage.
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/SessionEventType.java`
+  - `BE/src/main/java/com/superapp/auth/PasswordResetService.java`
+  - `BE/src/main/java/com/superapp/auth/AuthController.java`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added new audit event types:
+    - `PASSWORD_RESET_REQUESTED`
+    - `PASSWORD_RESET_CONFIRMED`
+  - Added request cooldown for password reset:
+    - default `60s`, configurable by `app.auth.password-reset-request-cooldown-seconds`
+    - returns `429 Too Many Requests` when spammed
+  - Wired reset request to include client IP keying for cooldown.
+  - Logged reset request/confirm actions into audit trail.
+  - Verified backend compiles:
+    - `.\mvnw.cmd -q -DskipTests compile`
+- In progress:
+  - Expose new reset audit event types in FE audit filter quick-picks.
+- Blockers/Risks:
+  - Cooldown map is in-memory (resets on service restart); distributed rate-limit (Redis) not yet implemented.
+- Next session plan:
+  - Add FE quick filter chips for reset/session event types and small admin UX polish for audit panel.
+
+## Session 2026-05-23 #33
+- Goal: Improve FE audit panel usability for newly added reset events.
+- Files touched:
+  - `FE/src/App.jsx`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Replaced free-text `eventType` input with controlled select options.
+  - Added reset-related filter values:
+    - `PASSWORD_RESET_REQUESTED`
+    - `PASSWORD_RESET_CONFIRMED`
+  - Kept legacy session event filters in same control.
+  - Verified FE build passes:
+    - `npm run build`
+- In progress:
+  - Optional date presets (`last 24h`, `last 7d`) for audit query UX.
+- Blockers/Risks:
+  - None blocking.
+- Next session plan:
+  - Implement phone-based login/register skeleton to advance User Management coverage.
+
+## Session 2026-05-23 #34
+- Goal: Implement phone-based register/login skeleton while keeping backward compatibility.
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/UserAccount.java`
+  - `BE/src/main/java/com/superapp/auth/UserAccountRepository.java`
+  - `BE/src/main/java/com/superapp/auth/dto/RegisterRequest.java`
+  - `BE/src/main/java/com/superapp/auth/dto/LoginRequest.java`
+  - `BE/src/main/java/com/superapp/auth/AuthService.java`
+  - `BE/src/main/java/com/superapp/auth/dto/ProfileResponse.java`
+  - `BE/src/main/java/com/superapp/auth/ProfileController.java`
+  - `FE/src/App.jsx`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added optional `phone` field to user entity and repository lookup/exists by phone.
+  - Register now accepts optional phone and checks uniqueness.
+  - Login now accepts `identifier` (email or phone).
+  - Preserved compatibility for old clients by still allowing legacy `email` in login request body.
+  - Added phone normalization/validation in auth service.
+  - Profile response now includes phone.
+  - FE auth demo updated with:
+    - register phone input
+    - login identifier input (email or phone)
+  - Updated API quickstart examples for phone-aware register/login.
+  - Verified builds:
+    - BE: `.\mvnw.cmd -q -DskipTests compile`
+    - FE: `npm run build`
+- In progress:
+  - Add reset-by-phone path (OTP stub) for full account recovery parity.
+- Blockers/Risks:
+  - Current phone path is password-based only; SMS OTP delivery is not implemented yet.
+- Next session plan:
+  - Add 2FA/MFA skeleton endpoints (issue OTP challenge + verify OTP) and connect to current auth flow as optional step-up.
+
+## Session 2026-05-23 #35
+- Goal: Implement 2FA/MFA skeleton endpoints and FE demo controls.
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/MfaService.java`
+  - `BE/src/main/java/com/superapp/auth/SessionEventType.java`
+  - `BE/src/main/java/com/superapp/auth/AuthController.java`
+  - `BE/src/main/java/com/superapp/auth/dto/MfaVerifyRequest.java`
+  - `FE/src/App.jsx`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added MFA challenge endpoint:
+    - `POST /api/auth/mfa/challenge` (auth required)
+  - Added MFA verify endpoint:
+    - `POST /api/auth/mfa/verify` (auth required)
+  - Implemented OTP skeleton service:
+    - 6-digit code generation
+    - expiration TTL
+    - request cooldown
+    - max failed attempt lock
+    - dev code exposure toggle
+  - Added MFA audit event types:
+    - `MFA_CHALLENGE_REQUESTED`
+    - `MFA_VERIFIED`
+  - Added FE panel to request/verify MFA code for local testing.
+  - Verified builds:
+    - BE: `.\mvnw.cmd -q -DskipTests compile`
+    - FE: `npm run build`
+- In progress:
+  - Convert in-memory MFA challenge store to persistent/distributed store (Redis) for multi-instance deployment.
+- Blockers/Risks:
+  - MFA is optional skeleton only; not yet enforced in login flow.
+- Next session plan:
+  - Add MFA enforcement policy flags per user and challenge-after-password step in login pipeline.
+
+## Session 2026-05-23 #36
+- Goal: Enforce MFA in login flow with per-user policy toggle.
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/UserAccount.java`
+  - `BE/src/main/java/com/superapp/auth/dto/ProfileResponse.java`
+  - `BE/src/main/java/com/superapp/auth/ProfileController.java`
+  - `BE/src/main/java/com/superapp/auth/dto/TokenPairResponse.java`
+  - `BE/src/main/java/com/superapp/auth/MfaService.java`
+  - `BE/src/main/java/com/superapp/auth/AuthService.java`
+  - `BE/src/main/java/com/superapp/auth/AuthController.java`
+  - `BE/src/main/java/com/superapp/auth/dto/MfaLoginVerifyRequest.java`
+  - `BE/src/main/java/com/superapp/auth/dto/MfaSettingsRequest.java`
+  - `BE/src/main/java/com/superapp/config/DevDataSeeder.java`
+  - `FE/src/App.jsx`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added per-user `mfaEnabled` flag in user model and profile response.
+  - Login now enforces step-up MFA when `mfaEnabled=true`:
+    - password check passes
+    - returns `mfaRequired` + challenge ticket
+    - no tokens issued until MFA verify succeeds
+  - Added endpoint to complete login after MFA:
+    - `POST /api/auth/login/mfa/verify`
+  - Added endpoint to toggle user MFA policy:
+    - `POST /api/auth/mfa/settings`
+  - Extended MFA service with pending login challenge store (ticket + TTL + attempt guard).
+  - Updated FE login flow to handle `mfaRequired` and complete verification.
+  - Added FE controls to enable/disable MFA per current user.
+  - Verified builds:
+    - BE: `.\mvnw.cmd -q -DskipTests compile`
+    - FE: `npm run build`
+- In progress:
+  - Persist MFA challenge state in Redis for multi-instance deployment.
+- Blockers/Risks:
+  - Pending MFA challenges are currently in-memory (lost on restart).
+- Next session plan:
+  - Add TOTP authenticator-app seed/QR skeleton and recovery-code generation module.
+
+## Session 2026-05-23 #37
+- Goal: Add TOTP authenticator skeleton with recovery-code lifecycle.
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/UserAccount.java`
+  - `BE/src/main/java/com/superapp/auth/TotpService.java`
+  - `BE/src/main/java/com/superapp/auth/AuthController.java`
+  - `BE/src/main/java/com/superapp/auth/SessionEventType.java`
+  - `BE/src/main/java/com/superapp/auth/dto/ProfileResponse.java`
+  - `BE/src/main/java/com/superapp/auth/ProfileController.java`
+  - `BE/src/main/java/com/superapp/auth/dto/TotpSetupResponse.java`
+  - `BE/src/main/java/com/superapp/auth/dto/TotpSetupConfirmRequest.java`
+  - `FE/src/App.jsx`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added TOTP data fields on user model:
+    - `mfaTotpEnabled`
+    - `mfaTotpSecret`
+    - `mfaRecoveryCodeHashes`
+  - Added TOTP setup flow:
+    - `POST /api/auth/mfa/totp/setup` (returns secret + otpauth URL + recovery codes)
+    - `POST /api/auth/mfa/totp/confirm` (verifies code and enables TOTP)
+  - Added recovery/disable endpoints:
+    - `POST /api/auth/mfa/totp/recovery/regenerate`
+    - `POST /api/auth/mfa/totp/disable`
+  - Implemented RFC6238-style TOTP verification logic (HMAC-SHA1, 30s window).
+  - Added recovery-code hashing/consumption utility in service.
+  - Expanded profile response with `mfaTotpEnabled`.
+  - Added FE TOTP panel for start/confirm/regenerate/disable demo.
+  - Verified builds:
+    - BE: `.\mvnw.cmd -q -DskipTests compile`
+    - FE: `npm run build`
+- In progress:
+  - Wire login enforcement path to accept TOTP/recovery code directly as alternative challenge type.
+- Blockers/Risks:
+  - TOTP secret is currently stored plain in DB for skeleton phase; encryption-at-rest pending.
+  - Pending TOTP setup state is in-memory and expires (not distributed).
+- Next session plan:
+  - Add encrypted secret storage + optional QR image endpoint and integrate TOTP verification branch into login step-up.
+
+## Session 2026-05-23 #38
+- Goal: Harden MFA by encrypting TOTP secret at rest and supporting TOTP/recovery in login step-up verify.
+- Files touched:
+  - `BE/src/main/java/com/superapp/auth/SecretCryptoService.java`
+  - `BE/src/main/java/com/superapp/auth/TotpService.java`
+  - `BE/src/main/java/com/superapp/auth/MfaService.java`
+  - `BE/src/main/resources/application.yml`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added AES-GCM encryption/decryption service for sensitive secrets.
+  - TOTP secret is now encrypted before persisting to DB.
+  - Added configurable key support:
+    - `APP_AUTH_CRYPTO_KEY_BASE64`
+    - fallback key derivation from JWT secret for local/dev continuity
+  - Enhanced `POST /api/auth/login/mfa/verify` behavior:
+    - accepts OTP challenge code
+    - accepts TOTP code (when enabled)
+    - accepts one-time recovery code
+  - Verified builds:
+    - BE: `.\mvnw.cmd -q -DskipTests compile`
+    - FE: `npm run build`
+- In progress:
+  - Optional QR image endpoint generation for authenticator setup UX.
+- Blockers/Risks:
+  - Pending login challenge store remains in-memory (not Redis/distributed yet).
+- Next session plan:
+  - Add QR render endpoint and migrate MFA challenge state to Redis-backed storage abstraction.
+
+## Session 2026-05-23 #39
+- Goal: Add TOTP QR rendering endpoint and prepare MFA challenge storage seam for Redis.
+- Files touched:
+  - `BE/pom.xml`
+  - `BE/src/main/java/com/superapp/auth/QrCodeService.java`
+  - `BE/src/main/java/com/superapp/auth/dto/TotpQrRequest.java`
+  - `BE/src/main/java/com/superapp/auth/MfaLoginChallengeRecord.java`
+  - `BE/src/main/java/com/superapp/auth/MfaLoginChallengeStore.java`
+  - `BE/src/main/java/com/superapp/auth/InMemoryMfaLoginChallengeStore.java`
+  - `BE/src/main/java/com/superapp/auth/MfaService.java`
+  - `BE/src/main/java/com/superapp/auth/AuthController.java`
+  - `FE/src/App.jsx`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added ZXing dependencies for server-side QR generation.
+  - Added endpoint:
+    - `POST /api/auth/mfa/totp/qrcode` (returns PNG data URL)
+  - FE TOTP panel now renders QR image directly for authenticator scan.
+  - Extracted login challenge persistence seam:
+    - `MfaLoginChallengeStore` interface
+    - `InMemoryMfaLoginChallengeStore` default implementation
+  - Refactored `MfaService` to use store abstraction instead of direct map, enabling future Redis swap with minimal service changes.
+  - Verified builds:
+    - BE: `.\mvnw.cmd -q -DskipTests compile`
+    - FE: `npm run build`
+- In progress:
+  - Implement Redis-backed challenge store implementation.
+- Blockers/Risks:
+  - Still running in-memory store in current environment (state loss on restart expected).
+- Next session plan:
+  - Add `RedisMfaLoginChallengeStore` behind config flag and fallback to in-memory for local dev.
+
+## Session 2026-05-23 #40
+- Goal: Implement Redis-backed MFA login challenge store with configurable fallback.
+- Files touched:
+  - `BE/pom.xml`
+  - `BE/src/main/resources/application.yml`
+  - `BE/src/main/java/com/superapp/auth/MfaLoginChallengeStore.java`
+  - `BE/src/main/java/com/superapp/auth/MfaLoginChallengeRecord.java`
+  - `BE/src/main/java/com/superapp/auth/InMemoryMfaLoginChallengeStore.java`
+  - `BE/src/main/java/com/superapp/auth/RedisMfaLoginChallengeStore.java`
+  - `BE/src/main/java/com/superapp/auth/MfaService.java`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added Redis dependency (`spring-boot-starter-data-redis`).
+  - Added configurable store selector:
+    - `app.auth.mfa.challenge-store` / `APP_AUTH_MFA_CHALLENGE_STORE`
+    - `memory` (default) or `redis`
+  - Implemented Redis store:
+    - `RedisMfaLoginChallengeStore`
+    - JSON serialization via `ObjectMapper`
+    - key TTL enforcement for challenge expiration
+  - Kept in-memory fallback:
+    - `InMemoryMfaLoginChallengeStore` active by default/local dev
+  - Refactored service layer to pass TTL through store interface.
+  - Verified builds:
+    - BE: `.\mvnw.cmd -q -DskipTests compile`
+    - FE: `npm run build`
+- In progress:
+  - Add integration smoke test profile for redis mode.
+- Blockers/Risks:
+  - Redis mode requires reachable Redis instance; otherwise startup/runtime failures are expected in that mode.
+- Next session plan:
+  - Add docker-compose local infra profile (Postgres + Redis + MinIO) and wire environment templates.
+
+## Session 2026-05-23 #41
+- Goal: Bootstrap local infra stack for BE runtime parity (Postgres + Redis + MinIO).
+- Files touched:
+  - `docker-compose.yml`
+  - `BE/.env.example`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added root `docker-compose.yml` with:
+    - PostgreSQL 16
+    - Redis 7
+    - MinIO (API + Console)
+  - Added backend env template for local infra mode:
+    - datasource postgres
+    - redis host/port
+    - MFA challenge store mode switch
+  - Added quickstart runbook to bring stack up/down and run BE against Postgres + Redis.
+  - Updated progress tracker status for Docker stack from not-started to in-progress.
+- In progress:
+  - Monitoring layer (`Prometheus + Grafana`) not yet attached.
+- Blockers/Risks:
+  - Redis mode requires running Redis container before BE startup.
+- Next session plan:
+  - Add `docker-compose.monitoring.yml` (Prometheus + Grafana) and first Spring Actuator metrics endpoint wiring.
+
+## Session 2026-05-23 #42
+- Goal: Add monitoring stack and wire backend metrics endpoint for Prometheus.
+- Files touched:
+  - `BE/pom.xml`
+  - `BE/src/main/resources/application.yml`
+  - `docker-compose.monitoring.yml`
+  - `ops/prometheus/prometheus.yml`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added Spring Boot Actuator + Prometheus registry dependencies.
+  - Enabled management endpoint exposure:
+    - `health`
+    - `info`
+    - `prometheus`
+  - Added monitoring compose stack:
+    - Prometheus (`:9090`)
+    - Grafana (`:3000`)
+  - Added Prometheus scrape config for backend:
+    - target `host.docker.internal:8080`
+    - path `/actuator/prometheus`
+  - Added quickstart runbook for monitoring up/down and UI URLs.
+  - Verified backend compile:
+    - `.\mvnw.cmd -q -DskipTests compile`
+- In progress:
+  - Grafana datasource/provisioning automation and starter dashboard JSON.
+- Blockers/Risks:
+  - If backend is not running on host `:8080`, Prometheus target will show down.
+- Next session plan:
+  - Add Grafana provisioning (datasource + basic dashboard) and optional alert rules skeleton.
+
+## Session 2026-05-23 #43
+- Goal: Auto-provision Grafana datasource and starter dashboard for immediate observability.
+- Files touched:
+  - `docker-compose.monitoring.yml`
+  - `ops/grafana/provisioning/datasources/prometheus.yml`
+  - `ops/grafana/provisioning/dashboards/dashboards.yml`
+  - `ops/grafana/dashboards/superapp-overview.json`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Mounted Grafana provisioning and dashboard folders into container.
+  - Added Grafana datasource provisioning:
+    - default datasource `Prometheus` -> `http://prometheus:9090`
+  - Added dashboard provider config for folder `SuperApp`.
+  - Added starter dashboard `SuperApp BE Overview` with key panels:
+    - service up
+    - request rate
+    - p95 latency
+    - JVM heap memory
+    - JVM live threads
+  - Updated quickstart with restart note for provisioning changes and dashboard location.
+- In progress:
+  - Alerting rules skeleton (latency/error thresholds) and notification channels.
+- Blockers/Risks:
+  - Dashboard queries depend on backend metrics labels from current Micrometer setup; custom endpoints may need query tuning later.
+- Next session plan:
+  - Add Prometheus alert rules + baseline Grafana alert/contact-point docs.
+
+## Session 2026-05-23 #44
+- Goal: Add baseline Prometheus alert rules for backend reliability signals.
+- Files touched:
+  - `ops/prometheus/prometheus.yml`
+  - `ops/prometheus/rules/superapp-alerts.yml`
+  - `docker-compose.monitoring.yml`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Enabled Prometheus rule loading via `rule_files`.
+  - Added baseline alert group with 3 alerts:
+    - `SuperAppBackendDown` (critical)
+    - `SuperAppHighHttpErrorRate` (warning)
+    - `SuperAppHighP95Latency` (warning)
+  - Mounted alert rules folder into Prometheus container.
+  - Documented alert inspection flow (`/alerts`, `/rules`) in quickstart.
+- In progress:
+  - Notification routing integration (Alertmanager or Grafana contact points).
+- Blockers/Risks:
+  - Alerts are local-only until notification channel is wired.
+- Next session plan:
+  - Add Alertmanager container + minimal route config and update runbook for email/webhook hooks.
+
+## Session 2026-05-23 #45
+- Goal: Integrate Alertmanager into monitoring stack with baseline routing config.
+- Files touched:
+  - `docker-compose.monitoring.yml`
+  - `ops/prometheus/prometheus.yml`
+  - `ops/alertmanager/alertmanager.yml`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added Alertmanager service (`:9093`) to monitoring compose stack.
+  - Connected Prometheus alerting pipeline to Alertmanager target `alertmanager:9093`.
+  - Added baseline Alertmanager route config:
+    - default receiver
+    - severity=critical receiver override
+  - Added webhook receiver placeholders for local integration tests.
+  - Updated quickstart with Alertmanager UI and webhook routing notes.
+- In progress:
+  - Replace placeholder webhook URLs with real channel bridge (Slack/Email/Teams).
+- Blockers/Risks:
+  - Current webhook targets are placeholders (`host.docker.internal:5001`) and will fail if no listener exists.
+- Next session plan:
+  - Add lightweight local webhook catcher service and example payload docs for alert debugging.
+
+## Session 2026-05-23 #46
+- Goal: Add local webhook catcher service for Alertmanager payload debugging.
+- Files touched:
+  - `Py/Dockerfile`
+  - `Py/app/main.py`
+  - `docker-compose.monitoring.yml`
+  - `ops/alertmanager/alertmanager.yml`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added Python webhook catcher container in monitoring stack (`:5001`).
+  - Added webhook endpoints:
+    - `POST /alerts/default`
+    - `POST /alerts/critical`
+    - `GET /alerts/recent`
+  - Switched Alertmanager webhook routes from host URL to internal Docker service URL (`webhook-catcher`).
+  - Added quickstart instructions for viewing recent alert payloads locally.
+- In progress:
+  - Replace local catcher with production notifier bridge adapters (Slack/Teams/Email).
+- Blockers/Risks:
+  - Webhook catcher stores payloads in memory only (cleared on restart).
+- Next session plan:
+  - Add sample notifier adapter module and environment-based receiver routing (dev/prod).
+
+## Session 2026-05-23 #47
+- Goal: Add environment-based notifier adapter mode for webhook catcher (dev/prod bridge behavior).
+- Files touched:
+  - `Py/app/main.py`
+  - `docker-compose.monitoring.yml`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added notifier mode handling in webhook catcher:
+    - `log` mode (default)
+    - `slack` mode via `SLACK_WEBHOOK_URL`
+  - Added delivery result metadata into stored alert events (`notify` field).
+  - Added notifier introspection endpoint:
+    - `GET /alerts/notifier`
+  - Added compose environment wiring for notifier mode env vars.
+  - Updated quickstart with env examples for Slack mode.
+- In progress:
+  - Add Teams/email adapter variants and message templates.
+- Blockers/Risks:
+  - Slack integration requires valid incoming webhook URL; failures are reported in `notify.reason`.
+- Next session plan:
+  - Add Teams webhook mode and shared formatter for alert payload summarization.
+
+## Session 2026-05-23 #48
+- Goal: Add Teams notifier mode and shared message formatter for alert bridge.
+- Files touched:
+  - `Py/app/alert_formatter.py`
+  - `Py/app/main.py`
+  - `docker-compose.monitoring.yml`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added shared formatter module for consistent alert summary/detail text.
+  - Added Teams notifier mode:
+    - `ALERT_NOTIFIER_MODE=teams`
+    - `TEAMS_WEBHOOK_URL=...`
+  - Kept existing `log` and `slack` modes intact.
+  - Extended notifier status endpoint to include Teams configuration state.
+  - Updated monitoring compose env wiring for Teams webhook variable.
+  - Added Teams usage example to quickstart.
+  - Verified Python syntax:
+    - `python -m py_compile Py/app/main.py Py/app/alert_formatter.py`
+- In progress:
+  - Add email notifier mode and unified retry/backoff policy for external webhooks.
+- Blockers/Risks:
+  - Teams/Slack outbound delivery depends on external network/webhook availability.
+- Next session plan:
+  - Add retry/backoff wrapper and dead-letter logging for notifier delivery failures.
+
+## Session 2026-05-23 #49
+- Goal: Harden notifier delivery with retry/backoff and dead-letter capture.
+- Files touched:
+  - `Py/app/notifier_client.py`
+  - `Py/app/main.py`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added reusable webhook client with retry/backoff policy:
+    - max attempts: 3
+    - exponential backoff base: 0.4s
+  - Integrated retry client into Slack and Teams notifier modes.
+  - Added dead-letter in-memory queue for failed deliveries.
+  - Added dead-letter inspection endpoint:
+    - `GET /alerts/dead-letter`
+  - Documented reliability behavior and new endpoint in quickstart.
+  - Verified Python syntax:
+    - `python -m py_compile Py/app/main.py Py/app/alert_formatter.py Py/app/notifier_client.py`
+- In progress:
+  - Persist dead-letter records to file/DB for restart durability.
+- Blockers/Risks:
+  - Dead-letter queue is currently memory-only; data is lost on service restart.
+- Next session plan:
+  - Add optional file-based dead-letter persistence and replay endpoint skeleton.
+
+## Session 2026-05-23 #50
+- Goal: Add file-based dead-letter persistence and replay endpoint skeleton.
+- Files touched:
+  - `Py/app/dead_letter_store.py`
+  - `Py/app/main.py`
+  - `docker-compose.monitoring.yml`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added JSONL dead-letter persistence helper.
+  - Added persistence hook for failed notifier deliveries.
+  - Added dead-letter file inspection endpoint:
+    - `GET /alerts/dead-letter/file`
+  - Added replay endpoint skeleton:
+    - `POST /alerts/dead-letter/replay?limit=10`
+  - Wired webhook-catcher container with persistent volume and default file path env:
+    - `ALERT_DEAD_LETTER_FILE=/data/dead-letter.jsonl`
+  - Documented new endpoints and behavior in quickstart.
+  - Verified Python syntax:
+    - `python -m py_compile Py/app/main.py Py/app/notifier_client.py Py/app/alert_formatter.py Py/app/dead_letter_store.py`
+- In progress:
+  - Replay deduplication and successful-event cleanup policy.
+- Blockers/Risks:
+  - Replay currently retries in-memory recent failures only; file-backed replay queue management is still basic.
+- Next session plan:
+  - Add replay source selection (memory/file) and cleanup markers for processed dead-letter records.
+
+## Session 2026-05-23 #51
+- Goal: Extend dead-letter replay with source selection and processed markers.
+- Files touched:
+  - `Py/app/dead_letter_store.py`
+  - `Py/app/main.py`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added dead-letter store helpers:
+    - `read_recent_unprocessed_dead_letters`
+    - `mark_processed`
+    - `is_enabled`
+  - Added replay source selection:
+    - `source=memory` (default)
+    - `source=file`
+  - Added processed marker behavior for file replay:
+    - successful records can be marked with `processedAt`
+    - response now includes `markedProcessed`
+  - Updated quickstart with replay examples for memory/file sources.
+  - Verified Python syntax:
+    - `python -m py_compile Py/app/main.py Py/app/dead_letter_store.py Py/app/notifier_client.py Py/app/alert_formatter.py`
+- In progress:
+  - Add optional compaction endpoint to purge processed rows from JSONL.
+- Blockers/Risks:
+  - JSONL rewrite in `mark_processed` is full-file for now; acceptable at current scale but not ideal for very large files.
+- Next session plan:
+  - Add dead-letter compaction endpoint and retention policy knobs.
+
+## Session 2026-05-23 #52
+- Goal: Add dead-letter file compaction endpoint with retention controls.
+- Files touched:
+  - `Py/app/dead_letter_store.py`
+  - `Py/app/main.py`
+  - `doc/API_QUICKSTART.md`
+  - `doc/PROGRESS_TRACKER.md`
+  - `doc/SESSION_LOG.md`
+- Completed:
+  - Added dead-letter compaction logic:
+    - optional removal of processed records
+    - max retained row count (`keepLast`)
+    - optional age-based pruning (`maxAgeHours`)
+  - Added endpoint:
+    - `POST /alerts/dead-letter/compact`
+  - Updated quickstart with compaction usage example.
+  - Verified Python syntax:
+    - `python -m py_compile Py/app/main.py Py/app/dead_letter_store.py Py/app/notifier_client.py Py/app/alert_formatter.py`
+- In progress:
+  - Add scheduled compaction trigger and policy env variables.
+- Blockers/Risks:
+  - Compaction is manual trigger for now; no automatic scheduler yet.
+- Next session plan:
+  - Add auto-compaction background task with configurable interval and retention defaults.
